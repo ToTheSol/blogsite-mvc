@@ -1,0 +1,33 @@
+﻿@model BlogSite.Models.BlogPost
+@{
+    ViewBag.Title = "AddPost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h2>@Model.Title</h2>
+    <h6>@Model.DatePosted</h6>
+    <p>@Model.Content</p>
+</div>
+
+
+@* 
+Notes about some syntax here    
+
+@{
+    var className = Model.Customers.Count > 5 ? "popular" : null;
+}
+<h2 class="@className">@Model.Movie.Name</h2>
+
+@if (normal condition block)
+{
+    some code
+}
+else
+{
+    @foreach ()
+    {
+        html or whatever
+    }
+}
+
+*@
